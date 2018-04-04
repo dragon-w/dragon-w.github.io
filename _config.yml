@@ -1,1 +1,51 @@
-theme: jekyll-theme-cayman
+# Basic
+title: Dragon-w
+subtitle: 每天进步一点点～
+description: 个人技术博客，记录工作和学习中的点点滴滴。
+welcome_message: <a href="#" target="_blank">Hello Programmer</a>
+creator: <a href="https://www.dragon-w.top">@dragon-w</a>
+url: https://www.dragon-w.top
+enforce_ssl: www.dragon-w.top
+permalink: /:year/:month/:title/
+root: /
+
+# Format
+highlighter: rouge
+
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: red
+
+# The blog button should not be removed.
+blog_button:
+    title: Blog
+    description: dragon-w blog
+
+# Navigation buttons in the front page.
+nav:
+    #- {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
+    # - {title: Another Button, description: A button, url: 'http://example.com'}
+
+# Pagination
+gems: [jekyll-paginate]
+paginate: 10
+paginate_path: "page/:num/"
+
+# Comment
+comment:
+    disqus: dragon-w
+    # duoshuo: 
+    
+# Social
+social:
+    weibo: dragon-w
+    github: dragon-w
+    twitter: dragon-w
+    gplus: 107108267983477358170
+    mail: wjl20170616@gmail.com
+
+# Google Analytics
+ga:
+    # id: your_ga_id
+    # host: your_host
+
+theme: jekyll-theme-hacker
