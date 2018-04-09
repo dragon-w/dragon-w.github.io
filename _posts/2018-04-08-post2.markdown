@@ -1,0 +1,68 @@
+---
+layout: post
+title: ES6语言特性
+date: 2018-04-08 17:47:24.000000000 +08:00
+---
+
+1.let关键字，声明的变量是局部的
+<pre class="prettyprint">
+if (true) {
+    let a = 'name';
+   }
+ console. log(name); // ReferenceError: a is not defined
+</pre>
+
+2.const 用来定义个常量，如果是引用类型可以修改它的属性
+
+<pre class="prettyprint">
+const MYNAME = 'viking';
+MYNAME = 'kitty'; // "CONSTANT" is read- only
+const MYNAME = {foo: 'viking'};
+MYNAME. foo = 'kitty'; //可以 正常 运行
+</pre>
+
+3.箭头函数，箭头函数永远是匿名的。
+<pre class="prettyprint">
+let add = (a, b) => {return a + b;}
+//当 后面 是 表达式( expression) 的 时候， 还可以 简写 成
+let add = (a, b) => a + b;
+//等 同于
+let add = function( a, b) {
+    return a + b;
+}
+
+//在 回 调 函数 中 应用
+let numbers = [1, 2, 3];
+let doubleNumbers = numbers. map(( number) => number * 2);
+console. log( doubleNumbers); //[2, 4, 6]
+</pre>
+
+4.函数默参数
+
+<pre class="prettyprint">
+
+function desc( name = 'Peter', age = 5) {
+
+  return name + ' is ' + age + ' years old';
+}
+
+desc(); //Peter is 5 years old
+</pre>
+
+5.解构数组
+
+  解构语法可以快速从数组或者对象中提取变量,可以用一个表达式读取整个结构。
+
+解构数组
+<pre class="prettyprint">
+let foo = ['one', 'two', 'three'];
+let [one, two, three] = foo;
+console. log(`${ one}, ${ two}, ${ three}`); //one, two, three
+</pre>
+
+解构对象
+<pre class="prettyprint">
+let person = {name: 'viking', age: 20};
+let {name, age} = person;
+console.log(`${ name}, ${ age}`); //viking, 20
+</pre>
