@@ -1,0 +1,17 @@
+---
+layout: post
+title: spring bean 的scope
+date: 2018-04-10 14:45:24.000000000 +08:00
+---
+
+Spring 的 Scope 有以下几种，通过@Scope注解来实现
+
+1. Singleton: 一个Spring容器中只有一个Bean的实例，此为Spring的默认配置，全容器共享一个实例
+
+2. Prototype: 每次调用新建一个Bean的实例。
+
+3. Request: Web项目中，给每一个http request 新建一个Bean实例
+
+4. Session: Web项目中，给每个http session 新建一个Bean实例
+
+5. GlobalSession: 这个只在portal应用中有用，给每个global http session  新建一个Bean实例
